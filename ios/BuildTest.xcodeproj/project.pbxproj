@@ -19,6 +19,7 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		893975586A2D2C58AE9D3C55 /* libPods-BuildTest-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 724679A347CAF87C7C73B9AE /* libPods-BuildTest-tvOS.a */; };
 		A5486A42662523C400168B29 /* libPods-BuildTest-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD63D1B039B193714E1D9489 /* libPods-BuildTest-tvOSTests.a */; };
+		E345100925E36F7900F07512 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E345100825E36F7900F07512 /* SplashScreen.storyboard */; };
 		E613FDB219C47A514A2032E9 /* libPods-BuildTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 894F8A66C02F227948021024 /* libPods-BuildTest.a */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		894F8A66C02F227948021024 /* libPods-BuildTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BuildTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46DD3DB6C000FF014DC3DA1 /* Pods-BuildTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuildTest.release.xcconfig"; path = "Target Support Files/Pods-BuildTest/Pods-BuildTest.release.xcconfig"; sourceTree = "<group>"; };
 		DD63D1B039B193714E1D9489 /* libPods-BuildTest-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BuildTest-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E345100825E36F7900F07512 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
 		E88204DDDA23BCCD4458D031 /* Pods-BuildTest-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuildTest-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-BuildTest-tvOSTests/Pods-BuildTest-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -134,7 +136,6 @@
 				E88204DDDA23BCCD4458D031 /* Pods-BuildTest-tvOSTests.debug.xcconfig */,
 				2C95B0119DC233DD7C299CE4 /* Pods-BuildTest-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -175,6 +176,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				E345100825E36F7900F07512 /* SplashScreen.storyboard */,
 				13B07FAE1A68108700A75B9A /* BuildTest */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* BuildTestTests */,
@@ -341,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				E345100925E36F7900F07512 /* SplashScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
