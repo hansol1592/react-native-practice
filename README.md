@@ -29,7 +29,28 @@
 - splash 생성
   - react-native-make
     - react-native-make 설치
-    - `react-native set-splash --path ./src/assets/images/Splash.png --resize center --background "#FFFFFF"` 와 같은 명령어로 생성
+    - `npx react-native set-splash --path ./src/assets/images/gowid-splash-logo.png --resize center --background "#5bc500"` 와 같은 명령어로 생성
   - ios
     - Storyboard 설정
       - ./ios/[Project Name].xcwrokspace 파일을 선택해 Xcode 실행
+
+### NetInfo
+
+- react-native 에서 Deprecated 되어 @react-native-community/netinfo 사용
+- 설치
+
+- ios
+
+  - `$ npx pod-install`
+  - simuator 에서 test 할 경우 정확하게 반응하지 않음
+    - 와이파이 변화를 감지하긴 하는데 감지하지 않을 때가 있음
+    - 콘솔에 찍은 데이터는 와이파이 연결이 변경되어도 계속 그대로 나오는데 simulator 를 reload 하면 다시 정상적으로 감지해서 콘솔에도 출력함
+
+- android
+
+  - build.gradle 을 수정하는 부분이 있기는 한데 현재 단계에서 필요한지 확인 필요하여 지금은 수정하지 않음.
+  - 수정함.
+    - 아직 어떤게 android surpport library 인지 잘 모르겠지만 혹시 몰라서 일단 수정
+
+- test
+  - real device 가 아닌 환경에서의 테스트는 정확하지 않을 수 있는 듯.

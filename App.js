@@ -16,6 +16,7 @@ import {
   StatusBar,
 } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
+import NetInfo, {useNetInfo} from '@react-native-community/netinfo';
 
 import {
   Header,
@@ -26,11 +27,16 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 const App = () => {
+  const netInfo = useNetInfo();
+  console.log('netInfo hooks: ', netInfo.isConnected);
+
   useEffect(() => {
-    setTimeout(() => {
+    if (netInfo.isConnected) {
       SplashScreen.hide();
-    }, 1000);
-  }, []);
+    } else {
+      // TODO
+    }
+  }, [netInfo.isConnected]);
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -44,7 +50,17 @@ const App = () => {
               <Text style={styles.footer}>Engine: Hermes</Text>
             </View>
           )}
+
           <View style={styles.body}>
+            <View style={styles.sectionContainer}>
+              <Text style={styles.sectionTitle}>NetInfo</Text>
+              <Text style={styles.sectionDescription}>
+                isConnected: {String(netInfo.isConnected)}
+              </Text>
+              <Text style={styles.sectionDescription}>
+                type: {String(netInfo.type)}
+              </Text>
+            </View>
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Step One</Text>
               <Text style={styles.sectionDescription}>
